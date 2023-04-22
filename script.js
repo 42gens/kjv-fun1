@@ -99,7 +99,7 @@ fetch('questionskjv1.json')
         alert('Bookmark not found');
       }
     } else {
-      alert('No bookmark has been set yet');
+      alert('No Bookmark set yet..Click on any Verse to create a Bookmark');
     }
   });
   
