@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body style="background-color: white;">
   <nav class="container">
     <a href="./index.html">Read</a>
     <a href="./index2.html">Facts</a>
@@ -14,8 +14,8 @@
     <a href="https://42gens.com/">42Gens</a>
   </nav>
 <!-- Create a dropdown list to allow the user to select a feeling -->
-<div style="text-align:center"><label style="color:#994141;font-size:27px;" for="feelings">Common negative feelings: </label>
-  <button id="share-button" style="position: fixed; top: 20px; right: 20px;">Share</button>
+<div style="text-align:center"><label style="color:#008CBA;font-size:27px;" for="feelings">Common negative feelings: </label>
+  <button id="share-button" style="position: fixed; top: 20px; right: 20px; background-color: #008CBA;">Share</button>
 
 
 <select id="feelings">
@@ -87,11 +87,11 @@
 </div>
 
 <!-- Create a table to display the Bible verses and messages -->
-<table id="verses" style="display: none;">
+<table id="verses" style="display: none; color:#008CBA;">
   <thead>
     <tr>
-      <th>Book</th>
-      <th>Message</th>
+      <th align="left">Book</th>
+      <th align="left">Message</th>
     </tr>
   </thead>
   <tbody>
@@ -172,7 +172,7 @@ if (navigator.share) {
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Soft gray box with centered text</title>
+	<title>Feelings and the Bible</title>
   <style>
     .card {
       border: 2px;
@@ -180,7 +180,8 @@ if (navigator.share) {
       max-width: 600px; /* Set a maximum width for the card */
       padding: 10px;
       border-radius: 5px;
-      background-color: #f5f783;
+      background-color: #008CBA;
+      color:white;
       box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
     }
   
@@ -195,7 +196,7 @@ if (navigator.share) {
 </head>
 <body>
   <div style="text-align: center;">
-    <span style="color: #3e8e41; font-size: 22px;">THIS TOO SHALL PASS</span> 
+    <span style="color: #008CBA; font-size: 22px;">REMINDER...THIS TOO SHALL PASS</span> 
     <br>
     <!--<span style="font-size: 14px;">Meditate on 1 Peter 5:1 thru 5:11 Morning, Noon and Night</span> !-->
   </div>

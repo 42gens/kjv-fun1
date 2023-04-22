@@ -188,7 +188,7 @@ if (navigator.share) {
   shareButton.addEventListener('click', () => {
     navigator.share({
       title: 'My Bible - 42gens',
-      text: 'Check out this Bible verse and message for when you are feeling down:',
+      text: 'Stay in the word',
       url: window.location.href
     })
       .then(() => console.log('Shared successfully'))

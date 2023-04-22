@@ -30,7 +30,7 @@ h1 {
 	margin: 20px 0 20px 0;
   	padding: 30px;
   	text-align: center;
-  	background: #1abc9c;
+  	background: #008CBA;
   	color: white;
   	font-size: 30px;
     text-align: center;
@@ -39,21 +39,11 @@ h1 {
 
 h2 {
 	margin: 20px 0 20px 0;
-	color: #3e8e41;
+	color: #4CAF50;
     text-align: center;
-    font-size: 42px;
-	
-	
-}
-
-
-
-h3 {
-	margin: 20px 0 20px 0;
-	color: #3e8e41;
-    text-align: center;
-    font-size: 27px;
+    font-size: 38px;
 	margin-bottom: 30px;
+	color: #008CBA;
 }
 
 table {
@@ -62,12 +52,11 @@ table {
 	height: 100%;
 	overflow-y: auto;
 	margin-bottom: 30px;
-	background-color: #f5f783;
 }
 
 
 table, th, td {
-	border: 1px solid #3e8e41;
+	border: 1px solid #008CBA; 
 	margin-bottom: 30px;
 	
 }
@@ -100,15 +89,17 @@ button {
 }
 
 button:hover {
-	background-color: #3e8e41;
+	background-color: #4CAF50;
 }
+
 
 input[type=text] {
 	padding: 10px;
 	margin-bottom: 10px;
-	border: 2px solid #4CAF50;
+	border: 2px solid #008CBA;
 	border-radius: 5px;
 	width: 100%;
+	
 }
 
 .container {
@@ -134,11 +125,11 @@ input[type=text] {
   }
   
   a:hover {
-	background: #3e8e41;
+	background: #4CAF50;
   }
   
   a:active {
-	background: #3e8e41;
+	background: #4CAF50;
 	color: white;
   }
 
@@ -150,7 +141,7 @@ input[type=text] {
   /* new code area below */
   select {
 	font-family: Arial, sans-serif;
-	background-color: #f7f7f7;
+	background-color: #008CBA;
 	border: none;
 	padding: 5px;
 	border-radius: 5px;
@@ -160,7 +151,7 @@ input[type=text] {
   #start-btn, #stop-btn {
 	padding: 10px;
 	font-size: 16px;
-	background-color: #4CAF50;
+	background-color: #008CBA;
 	color: white;
 	border: none;
 	border-radius: 5px;
@@ -169,7 +160,7 @@ input[type=text] {
  }
  
  #start-btn:hover, #stop-btn:hover {
-	background-color: #3e8e41;
+	background-color: #008CBA;
  }
  
  #verse {
@@ -198,20 +189,7 @@ select {
   label {
 	font-size: 24px;
 	font-weight: bold;
-	color: #3e8e41;
-  }
-
-
-  /*Placards for data display instead of table    */
-  .card {
-	background-color: #f5f783;
-	border-radius: 5px;
-	padding: 10px;
-	margin-bottom: 10px;
-	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  }
-  h2 {
-	margin-top: 0;
+	color: #4CAF50;
   }
   
 

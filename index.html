@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body style="background-color: white;">
 	<nav class="container">
 		<a href="./index.html">Read</a>
 		<a href="./index2.html">Facts</a>
@@ -14,15 +14,15 @@
 		<a href="https://42gens.com/">42Gens</a>
 	</nav>
 	<!--<button id="share-button" style="position: fixed; top: 20px; right: 20px;">Share</button> !-->
-
-	<h2>KJV Bible</h2>
 	
+	<h2>KJV Bible</h2>
+	<button id="share-button" style="position: fixed; top: 20px; right: 20px; background-color: #008CBA;">Share</button>
 	<input type="text" id="search1" onkeyup="searchTable1()" placeholder="Search...  Example: John 3:16">
 	<table id="table1">
 		<thead>
 			<tr>
-				<th>Book</th>
-				<th>Verse</th>
+				<th align="left">Book</th>
+				<th align="left">Verse</th>
 
 			</tr>
 		</thead>
@@ -31,9 +31,9 @@
 		
 	</table>
 	<div class="pagination">
-		<button onclick="prevPage1()">&laquo; Prev</button>
+		<button onclick="prevPage1()" style="background-color: #008CBA">&laquo; Prev</button>
 		<span id="page1"></span>
-		<button onclick="nextPage1()">Next &raquo;</button>
+		<button onclick="nextPage1()" style="background-color: #008CBA">Next &raquo;</button>
 		
 	</div>
 	<script src="./script.js"></script>

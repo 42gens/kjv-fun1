@@ -4,17 +4,25 @@
   <title>My Bible - 42gens</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
-
 </head>
-<body>
-  <button id="share-button" style="position: fixed; top: 20px; right: 20px;">Share</button>
+<body style="background-color: white;">
+  <nav class="container">
+    <a href="./index.html">Read</a>
+		<a href="./index2.html">Facts</a>
+		<a href="./index3.html">Feelings</a>
+		<a href="./index4.html">Audio</a>
+		<a href="https://42gens.com/">42Gens</a>
+   </nav>
+
+
+  <button id="share-button" style="position: fixed; top: 20px; right: 20px; background-color: #008CBA;">Share</button>
   <button id="start-btn">Start Audio</button>
   <button id="stop-btn">Stop Audio</button>
-  <button id="rewind-btn">&lt;&lt;</button>
-  <button id="fast-forward-btn">&gt;&gt;</button>
+  <button id="rewind-btn" style="background-color: #008CBA">&lt;&lt;</button>
+  <button id="fast-forward-btn" style="background-color: #008CBA">&gt;&gt;</button>
   
   <div>
-    <label for="book-search">Search by Book:</label>
+    <label for="book-search" style="color: #008CBA">Search by Book:</label>
     <input type="text" id="book-search" name="book-search">
     <datalist id="search-list">
       <option value="Genesis">
@@ -84,14 +92,10 @@
       <option value="Jude">
       <option value="Revelation">
     </datalist>
-    <button id="search-btn">Search</button>
+    <button id="search-btn" style="background-color: #008CBA">Search</button>
   </div>
 
-  <!--<div id="verse"></div> !-->
-  <div class="card">
-    <h2 id="book-verse"></h2>
-    <p id="verse"></p>
-  </div>
+  <div id="verse"></div>
 
   <script>
   if ('speechSynthesis' in window) {
@@ -213,17 +217,6 @@ if (navigator.share) {
   shareButton.style.display = 'none';
 }
 //Share End Function
-
-
-
   </script>
-  Audio for mobile is coming soon.
-   <nav class="container">
-    <a href="./index.html">Read</a>
-		<a href="./index2.html">Facts</a>
-		<a href="./index3.html">Feelings</a>
-		<a href="./index4.html">Audio</a>
-		<a href="https://42gens.com/">42Gens</a>
-   </nav>
  </body>
  </html>
