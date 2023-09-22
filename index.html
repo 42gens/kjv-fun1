@@ -1,42 +1,69 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>My Bible - 42gens</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body style="background-color: white;">
-	<nav class="container">
-		<a href="./index.html">Read</a>
-		<a href="./index2.html">Facts</a>
-		<a href="./index3.html">Feelings</a>
-		<a href="./index4.html">Audio</a>
-		<a href="https://42gens.com/">42Gens</a>
-	</nav>
-	<!--<button id="share-button" style="position: fixed; top: 20px; right: 20px;">Share</button> !-->
-	
-	<h2>KJV Bible</h2>
-	<button id="share-button" style="position: fixed; bottom: 20px; right: 20px; background-color: #008CBA;">Share</button>
-	<input type="text" id="search1" onkeyup="searchTable1()" placeholder="Search...  Example: John 3:16">
-	<table id="table1">
-		<thead>
-			<tr>
-				<th align="left">Book</th>
-				<th align="left">Verse</th>
+<html lang="en">
 
-			</tr>
-		</thead>
-		<tbody>
-		</tbody>
-		
-	</table>
-	<div class="pagination">
-		<button onclick="prevPage1()" style="background-color: #008CBA">&laquo; Prev</button>
-		<span id="page1"></span>
-		<button onclick="nextPage1()" style="background-color: #008CBA">Next &raquo;</button>
-		
-	</div>
-	<script src="./script.js"></script>
-	
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+     <!-- Banner -->
+     <div class="banner">
+        <h1>42Generations</h1>
+        <p>KJV</p>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search book and verse...">
+        <button onclick="search()">Search KJV</button>
+    </div>
+
+    <!-- Solid Bar -->
+    <div class="solid-bar"></div>
+
+    <!-- Audio Control Buttons -->
+    <div class="audio-controls">
+        <label for="speedControl">Speed: </label>
+        <input type="range" id="speedControl" min="0.5" max="2" step="0.1" value="1" onchange="setSpeechRate(parseFloat(this.value))">
+        <button onclick="startReading()">KJV Audio Start</button>
+        <button onclick="pauseReading()">KJV Audio Pause</button>
+        <button onclick="stopReading()">KJV Audio Reset</button>
+    </div>
+
+    <!-- Solid Bar -->
+    <div class="solid-bar"></div>
+
+    <!-- Place this button where you want it on the page, e.g., below the pagination div -->
+    <div>
+    <button onclick="loadBook2()">KJV Facts </button>
+    <button onclick="search()">KJV Bible</button>
+    </div>
+
+
+    <!-- Solid Bar -->
+    <div class="solid-bar"></div>
+
+    <div class="books-container">
+        <div class="column" id="left-column"></div>
+        <div class="column" id="right-column"></div>
+    </div>
+    
+    <div class="pagination">
+        <button onclick="firstPage()">First Page</button>
+        <button onclick="updatePage(-1)">Previous Page</button>
+        <button onclick="updatePage(1)">Next Page</button>
+        <button onclick="lastPage()">Last Page</button>
+    </div>
+
+    <!-- Solid Bar -->
+    <div class="solid-bar"></div>
+
+    <script src="index.js"></script>
+    <script src="voice.js"></script>
+    <script src="book2_facts.js"></script>
 </body>
+
 </html>
