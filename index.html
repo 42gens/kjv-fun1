@@ -26,11 +26,13 @@
 
     <!-- Audio Control Buttons -->
     <div class="audio-controls">
-        <label for="speedControl">Speed: </label>
-        <input type="range" id="speedControl" min="0.5" max="2" step="0.1" value="1" onchange="setSpeechRate(parseFloat(this.value))">
+        
         <button onclick="startReading()">KJV Audio Start</button>
         <button onclick="pauseReading()">KJV Audio Pause</button>
         <button onclick="stopReading()">KJV Audio Reset</button>
+    </div>
+    <div><label for="speedControl">Speed: </label>
+        <input type="range" id="speedControl" min="0.5" max="2" step="0.1" value="1" onchange="setSpeechRate(parseFloat(this.value))">
     </div>
 
     <!-- Solid Bar -->
