@@ -121,4 +121,39 @@ button:active {
     width: 100%; /* Span the full width */
 }
 
+/* Existing CSS... */
+
+/* Responsive styles */
+
+@media only screen and (max-width: 768px) {  /* Target devices with width 768px and below (Tablet and Mobile) */
+    .books-container {
+        flex-direction: column; /* Stack columns vertically on smaller devices */
+    }
+    
+    .column {
+        width: 100%; /* Take full width on smaller devices */
+        margin-bottom: 20px; /* Add some spacing between the stacked columns */
+    }
+
+    /* You can adjust or add more styles for mobile and tablet view inside this media query */
+}
+
+@media only screen and (max-width: 480px) {  /* Target devices with width 480px and below (Mobile) */
+    .banner h1 {
+        font-size: 1.2em; /* Adjust banner font size for mobile */
+    }
+
+    .banner p {
+        font-size: 1.2em; /* Adjust banner font size for mobile */
+    }
+
+    /* Adjust button padding for better touch target on mobile */
+    button {
+        padding: 10px 15px;
+    }
+    
+    /* You can adjust or add more styles specifically for mobile view inside this media query */
+}
+
+
 
