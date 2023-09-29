@@ -78,12 +78,11 @@ body {
 
 .pagination button {
     margin: 0 5px;
-    padding: 5px 15px;
+    padding: 2.5px 5px; /* Button padding */
     border: none;
     background-color: #36454F;
     cursor: pointer;
-    border-radius: 3px;
-}
+    border-radius: 10px; /* Rounded corners */}
 
 .pagination button:hover {
     background-color: #ddd;
@@ -93,11 +92,11 @@ body {
 button {
     background: #36454F; /* Gradient Background */
     border: none; /* Remove default borders */
-    padding: 5px 10px; /* Button padding */
+    padding: 2.5px 5px; /* Button padding */
     color: #fff; /* Text color */
     font-size: 12px; /* Font size */
-    font-weight: 50; /* Font weight */
-    border-radius: 20px; /* Rounded corners */
+    font-weight: bold; /* Font weight */
+    border-radius: 10px; /* Rounded corners */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     cursor: pointer; /* Hand cursor on hover */
     transition: transform 0.1s, box-shadow 0.1s; /* Transition effect for interactive feedback */
