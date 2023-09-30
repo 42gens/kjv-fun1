@@ -4,8 +4,6 @@ let currentUtteranceIndex = 0;
 let isPaused = false;
 
 
-
-
 function startReading() {
     if (!isPaused) {
         createUtterances();
@@ -16,14 +14,25 @@ function startReading() {
 }
 
 function pauseReading() {
-    synthesis.pause();
-    isPaused = true;
+    try {
+        synthesis.pause();
+        isPaused = true;
+    } catch (error) {
+        console.error("Error pausing speech synthesis:", error);
+        // Handle the error or provide a message to the user
+    }
 }
 
 function resumeReading() {
-    synthesis.resume();
-    isPaused = false;
+    try {
+        synthesis.resume();
+        isPaused = false;
+    } catch (error) {
+        console.error("Error resuming speech synthesis:", error);
+        // Handle the error or provide a message to the user
+    }
 }
+
 
 function stopReading() {
     synthesis.cancel();

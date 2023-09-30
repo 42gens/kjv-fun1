@@ -140,10 +140,12 @@ button:active {
 @media only screen and (max-width: 480px) {  /* Target devices with width 480px and below (Mobile) */
     .banner h1 {
         font-size: 1.2em; /* Adjust banner font size for mobile */
+        text-align: center;
     }
 
     .banner p {
         font-size: 1.2em; /* Adjust banner font size for mobile */
+        text-align: center;
     }
 
     /* Adjust button padding for better touch target on mobile */
